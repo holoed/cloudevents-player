@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const socket = new WebSocket("ws://" + window.location.host + "/socket");
+const socket = new WebSocket("wss://" + window.location.host + "/socket");
 
 const ViewEvent = ({ event }) => {
   const [open, setOpen] = React.useState(false);
